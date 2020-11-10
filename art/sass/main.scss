@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1 rem = 10px; 10px/16px
+}
+
+body {
+    background-color: hsl(211, 10%, 53%);
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    color: hsl(210, 24%, 16%);
+    padding: 1rem;
+}
+
+.container {
+    background-color: hsl(216, 33%, 97%);
+    min-height: 80vh;
+}
+
+.header {
+    font-size: 3.6rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem;
+}
+
+.divider {
+    background-color: hsl(211, 10%, 53%);
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.art {
+    &__header {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-align: center;
+        border-bottom: 1px solid hsl(216, 98%, 25%);
+    }
+
+    &__box {
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-rows: 8rem 3rem 3rem;
+}
+
+.header {
+    grid-column: full-start / full-end;
+}
+
+.divider {
+    grid-column: full-start / full-end;
+}
+
+.art {
+    &__header {
+        grid-column: center-start / center-end;
+    }
+
+    &__container {
+        grid-column: full-start / full-end;
+
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        column-gap: 2rem;
+    }
+}
