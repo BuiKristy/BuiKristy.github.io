@@ -39,6 +39,7 @@ body {
   border-bottom: 1px solid #01337e; }
 
 .art__container {
+  margin-top: 3rem;
   padding: 1rem; }
 
 .art__img {
@@ -87,7 +88,7 @@ div[class^="art-w-"] p {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 8rem 3rem 3rem;
+  grid-template-rows: 8rem 2rem;
   grid-auto-rows: max-content; }
 
 .header {

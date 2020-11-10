@@ -1,4 +1,5 @@
-var weeks = [1, 2];
+var weeks = [1, 2, 3, 4, 5];
+var titles = ["Favorite Pokemon", "Favorite Animal in an Unlikely Habitat", "Favorite Anime Character", "Flower of Your Choice", "Food or Favorite League Character"];
 
 function getGallery(callback) {
     var xobj = new XMLHttpRequest();
@@ -14,36 +15,40 @@ function getGallery(callback) {
 
 async function galleryController() {
     getGallery(function(response) {
-        var json = JSON.parse(response);
-        
-        for(var i = 0; i < weeks.length; i++) {
-            galleryView(weeks[i], json[weeks[i]]);
+        for(var i = weeks.length - 1; i >= 0; i--) {
+            galleryView(weeks[i], titles[i], JSON.parse(response)[weeks[i]]);
         }
     })
 
 }
 
-function galleryView(weekNum, json) {
+async function galleryView(weekNum, title, json) {
+    console.log(json);
+    var markup = `<div class="art__header">Week ${weekNum}: ${title}</div>
+    <div class="art__container">`;
     for(var i = 0; i < json.length; i++) {
-    var markup =  `<div>
-                        <input type="checkbox" id="art-${weekNum}-${i}">
-                        <label for="art-${weekNum}-${i}">
-                        <img src="${json.url}" 
-                            alt="${json.description}" class="art--img">
-                        </label>
-                        <p>${json.name}</p>
-        
-                        <label for="art-${weekNum}-${i}">
-                            <div id="cover-${weekNum}-${i}">
-                                <div id="box-${weekNum}-${i}">
-                                    <img src="${json.url}" 
-                                        alt="${json.description}" class="">
+        var row = json[i];
+        markup +=  `<div class="art-w-${weekNum}-${i}">
+                            <input type="checkbox" id="art-w-${weekNum}-${i}">
+                            <label for="art-w-${weekNum}-${i}">
+                            <img src="${row.url}" 
+                                alt="${row.description}" class="art__img">
+                            </label>
+                            <p>${row.name}</p>
+            
+                            <label for="art-w-${weekNum}-${i}">
+                                <div id="cover-${weekNum}-${i}">
+                                    <div id="box-${weekNum}-${i}">
+                                        <img src="${row.url}" 
+                                            alt="${row.description}" class="">
+                                    </div>
                                 </div>
-                            </div>
-                        </label>
-                    </div>`;
+                            </label>
+                        </div>`;
     }
-
+    markup += `</div>`
+    
+    document.querySelector('.container').insertAdjacentHTML('beforeend', markup);
     // return markup;
 }
 
