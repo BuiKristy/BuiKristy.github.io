@@ -1,4 +1,3 @@
-var weeks = [1, 2, 3, 4, 5];
 var titles = ["Favorite Pokemon", "Favorite Animal in an Unlikely Habitat", "Favorite Anime Character", "Flower of Your Choice", "Food or Favorite League Character"];
 
 function getGallery(callback) {
@@ -15,19 +14,20 @@ function getGallery(callback) {
 
 async function galleryController() {
     getGallery(function(response) {
-        for(var i = weeks.length - 1; i >= 0; i--) {
-            galleryView(weeks[i], titles[i], JSON.parse(response)[weeks[i]]);
+        for(var i = titles.length - 1; i >= 0; i--) {
+            galleryView(i, titles[i], JSON.parse(response)[i + 1]);
         }
     })
 
 }
 
-async function galleryView(weekNum, title, json) {
-    console.log(json);
+async function galleryView(weekNum, title, arr) {
+    weekNum = weekNum + 1;
+    console.log(arr);
     var markup = `<div class="art__header">Week ${weekNum}: ${title}</div>
     <div class="art__container">`;
-    for(var i = 0; i < json.length; i++) {
-        var row = json[i];
+    for(var i = 0; i < arr.length; i++) {
+        var row = arr[i];
         markup +=  `<div class="art-w-${weekNum}-${i}">
                             <input type="checkbox" id="art-w-${weekNum}-${i}">
                             <label for="art-w-${weekNum}-${i}">
@@ -40,7 +40,7 @@ async function galleryView(weekNum, title, json) {
                                 <div id="cover-${weekNum}-${i}">
                                     <div id="box-${weekNum}-${i}">
                                         <img src="${row.url}" 
-                                            alt="${row.description}" class="">
+                                            alt="${row.description}" class="art__img--preview">
                                     </div>
                                 </div>
                             </label>

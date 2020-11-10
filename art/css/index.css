@@ -223,10 +223,10 @@ div[class^="art-w-"] p {
   grid-column: span 2; }
 
 .art-w-5-11 {
-  grid-column: span 2; }
+  grid-column: span 3; }
 
 .art-w-5-12 {
-  grid-column: span 4; }
+  grid-column: span 2; }
 
 .art-w-5-13 {
   grid-column: span 2; }
