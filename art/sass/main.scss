@@ -96,7 +96,8 @@ div[id^="box-"] {
 }
 
 .art__img--preview {
-    width: 100%;
+    width: auto;
+    max-height: 50vw;
 }
 
 .art__img {

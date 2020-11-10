@@ -77,7 +77,8 @@ div[id^="box-"] {
   transition: all .3s; }
 
 .art__img--preview {
-  width: 100%; }
+  width: auto;
+  max-height: 50vw; }
 
 .art__img {
   border: 1px solid #2487eb; }
