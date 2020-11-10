@@ -23,7 +23,6 @@ async function galleryController() {
 
 async function galleryView(weekNum, title, arr) {
     weekNum = weekNum + 1;
-    console.log(arr);
     var markup = `<div class="art__header">Week ${weekNum}: ${title}</div>
     <div class="art__container">`;
     for(var i = 0; i < arr.length; i++) {
@@ -49,7 +48,6 @@ async function galleryView(weekNum, title, arr) {
     markup += `</div>`
     
     document.querySelector('.container').insertAdjacentHTML('beforeend', markup);
-    // return markup;
 }
 
 if(document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
