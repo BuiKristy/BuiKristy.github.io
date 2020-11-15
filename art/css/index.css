@@ -262,3 +262,6 @@ div[class^="art-w-"] p {
 
 .art-w-6-6 {
   grid-column: span 2; }
+
+.art-w-6-7 {
+  grid-column: span 2; }
