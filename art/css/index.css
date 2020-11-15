@@ -127,6 +127,9 @@ div[class^="art-w-"] p {
 .art-w-1-5 {
   grid-column: span 3; }
 
+.art-w-1-6 {
+  grid-column: span 3; }
+
 .art-w-2-0 {
   grid-column: span 3; }
 
@@ -248,4 +251,14 @@ div[class^="art-w-"] p {
   grid-column: span 2; }
 
 .art-w-6-3 {
+  grid-column: span 2; }
+
+.art-w-6-4 {
+  grid-column: span 2; }
+
+.art-w-6-5 {
+  grid-row-start: 1;
+  grid-column: 9 / span 2; }
+
+.art-w-6-6 {
   grid-column: span 2; }
