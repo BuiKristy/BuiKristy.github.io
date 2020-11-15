@@ -79,7 +79,13 @@ div[id^="box-"] {
 
 .art__img--preview {
   width: auto;
-  max-height: 50vw; }
+  max-height: 80vh; }
+  @media only screen and (max-width: 1600px) {
+    .art__img--preview {
+      max-width: 80vw; } }
+  @media only screen and (max-width: 800px) {
+    .art__img--preview {
+      max-width: 100vw; } }
 
 .art__img {
   border: 1px solid #2487eb; }
