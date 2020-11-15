@@ -29,6 +29,11 @@
             "name": "Andrew P.",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/764380414700683284/unknown.png",
             "description": "Jolteon"
+        },
+        {
+            "name": "Derek",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777348058412875816/escavalier.png",
+            "description": "Escavalier"
         }
     ],
     "2": [
@@ -239,6 +244,21 @@
             "name": "Тони",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/777262948619386900/why_r_u_gae.png",
             "description": "Lewd Dragon"
+        },
+        {
+            "name": "Monina",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777331857607098368/Snapchat-1618387311.jpg",
+            "description": "Dragon Girl"
+        },
+        {
+            "name": "Lunaeriya",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777380429938163722/image0.jpg",
+            "description": "Merchant Mouse"
+        }, 
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777388756465877008/Necromancer.png",
+            "description": "Necromancer"
         }
     ]
 }
