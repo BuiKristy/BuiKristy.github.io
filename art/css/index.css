@@ -93,5 +93,8 @@ div[class^="art-w-"] p {
   margin-bottom: 10rem;
   justify-content: space-around; }
   .art__container div[class^="art-w-"] {
-    height: 40vh;
+    height: 30vh;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 600px) {
+      .art__container div[class^="art-w-"] {
+        height: 20vh; } }
