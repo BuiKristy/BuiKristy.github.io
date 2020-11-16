@@ -13,7 +13,7 @@ function getGallery(callback) {
 async function galleryController() {
     getGallery(function(response) {
         response = JSON.parse(response);
-        Object.keys(response).forEach(function(key, index) {
+        Object.keys(response).reverse().forEach(function(key, index) {
             console.log(response[key]);
             galleryView(index, key, response[key]);
         })
