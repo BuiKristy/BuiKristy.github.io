@@ -1,150 +1,64 @@
 {
-    "Favorite Pokemon": [
+    "Fantasy or Dragons": [
         {
-            "name": "Juan",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763927188247543818/scorbunny.PNG",
-            "description": "Scorbunny"
+            "name": "Michael",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/775598136185978931/Untitled.png", 
+            "description": "Fire-Breathing Dragon"
         },
         {
-            "name": "Anthony",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763939646807212042/stScbwtvFS3IMmwDCoDyx88fowYhg8tFV6bl7F0H1g-j0Dh-expgYb78wpR6SMh-oMVdhY8DzQ5hRHttzll5aPv1En8pOoG5lS-Q.png",
-            "description": "Diglett"
-        },
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763957600386809906/Cubone.png",
-            "description": "Cubone"
-        },
-        {
-            "name": "Kristy",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763972891065712660/week-1-finished.png",
-            "description": "Pikachu"
-        },
-        {
-            "name": "Anthony",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763998994598199337/image0.png",
-            "description": "Greninja"
-        },
-        {
-            "name": "Andrew P.",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/764380414700683284/unknown.png",
-            "description": "Jolteon"
-        },
-        {
-            "name": "Derek",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777348058412875816/escavalier.png",
-            "description": "Escavalier"
-        }
-    ],
-    "Favorite Animal in an Unlikely Habitat": [
-        {
-            "name": "Juan",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766748309963407450/discogator.png", 
-            "description": "Alligator Disco"
-        },
-        {
-            "name": "Andrew P.",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766820485564465152/unknown.png",
-            "description": "Beach Penguin"
-        },
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766872519327744040/Michelangelo.png",
-            "description": "Skating Ninja Turtle"
-        },
-        {
-            "name": "Kristy",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766888581858852874/week-2.png",
-            "description": "Space Hedgehog"
-        },
-        {
-            "name": "Ben",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766924827877048320/Untitled_Artwork.JPG",
-            "description": "Feudal Elephant"
-        }
-    ],
-    "Favorite Anime Character": [
-        {
-            "name": "Anthony",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/767647312284614676/unknown.png", 
-            "description": "Diglett James"
-        },
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/767653358181154866/Vivi.png",
-            "description": "Princess Vivi"
-        },
-        {
-            "name": "Juan",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769055259342929941/razor.png",
-            "description": "Razor"
-        },
-        {
-            "name": "Ben",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769433770876338176/Untitled_Artwork.PNG",
-            "description": "Gon Freecss"
-        },
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769436948640038932/Hayasaka.png",
-            "description": "Hayasaka Ai"
-        },
-        {
-            "name": "Kristy",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/770178291377111100/rider.png",
-            "description": "Rider"
-        },
-        {
-            "name": "Andrew P.",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/770931190341435402/unknown.png",
-            "description": "Shirley Fenette"
-        }
-    ],
-    "Flower of Your Choice": [
-        {
-            "name": "Juan",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771886887777730610/flower.png", 
-            "description": "Flower"
-        },
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771916781043580938/Flowey.png",
-            "description": "Flowey"
-        },
-        {
-            "name": "Anthony",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771935634419482634/20201030_201512.jpg",
-            "description": "Flower"
-        },
-        {
-            "name": "Kristy",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771965504062881812/week-4.png",
-            "description": "Flower"
-        },
-        {
-            "name": "James",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771940776036794369/unknown.png",
-            "description": "Flower"
+            "name": "Andrew H.",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/776560727296573440/Epic_Dragooooon.png",
+            "description": "Epic Dragon"
         },
         {
             "name": "Monica",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772648665869320202/IMG-0121.jpg",
-            "description": "Flowers"
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777255537855168532/2.png",
+            "description": "Dragon With Kitchenaid"
+        },
+        {
+            "name": "Тони",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777262948619386900/why_r_u_gae.png",
+            "description": "Lewd Dragon"
+        },
+        {
+            "name": "Monina",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777331857607098368/Snapchat-1618387311.jpg",
+            "description": "Dragon Girl"
+        },
+        {
+            "name": "Lunaeriya",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777380429938163722/image0.jpg",
+            "description": "Merchant Mouse"
+        }, 
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777392665750667313/Necromancer.png",
+            "description": "Necromancer"
+        }, 
+        {
+            "name": "Anthony",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777424812091899934/reshephir.jpg",
+            "description": "Void Horses"
+        },
+        {
+            "name": "Ben",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777453805591199744/Untitled_Artwork.png",
+            "description": "Pegacorn"
+        },
+        {
+            "name": "Juan",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777655751995818004/dargon.PNG",
+            "description": "Dragon Snail"
+        },
+        {
+            "name": "Kristy",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777676410062897212/week6.png",
+            "description": "Dragon and Girl"
         },
         {
             "name": "Jessica",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772648726983606312/IMG-0122.jpg",
-            "description": "Flowers"
-        },
-        {
-            "name": "Ali",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772711706928742440/image0.jpg",
-            "description": "Flower"
-        },
-        {
-            "name": "Andrew P.",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772731213134954496/unknown.png",
-            "description": "Flower"
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777762380641861663/image0.jpg",
+            "description": "Dragon"
         }
     ],
     "Food or Favorite League Character": [
@@ -224,66 +138,152 @@
             "description": "Zac"
         }
     ],
-    "Fantasy or Dragons": [
-        {
-            "name": "Michael",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/775598136185978931/Untitled.png", 
-            "description": "Fire-Breathing Dragon"
-        },
-        {
-            "name": "Andrew H.",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/776560727296573440/Epic_Dragooooon.png",
-            "description": "Epic Dragon"
-        },
-        {
-            "name": "Monica",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777255537855168532/2.png",
-            "description": "Dragon With Kitchenaid"
-        },
-        {
-            "name": "Тони",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777262948619386900/why_r_u_gae.png",
-            "description": "Lewd Dragon"
-        },
-        {
-            "name": "Monina",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777331857607098368/Snapchat-1618387311.jpg",
-            "description": "Dragon Girl"
-        },
-        {
-            "name": "Lunaeriya",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777380429938163722/image0.jpg",
-            "description": "Merchant Mouse"
-        }, 
-        {
-            "name": "Phil",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777392665750667313/Necromancer.png",
-            "description": "Necromancer"
-        }, 
-        {
-            "name": "Anthony",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777424812091899934/reshephir.jpg",
-            "description": "Void Horses"
-        },
-        {
-            "name": "Ben",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777453805591199744/Untitled_Artwork.png",
-            "description": "Pegacorn"
-        },
+    "Flower of Your Choice": [
         {
             "name": "Juan",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777655751995818004/dargon.PNG",
-            "description": "Dragon Snail"
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771886887777730610/flower.png", 
+            "description": "Flower"
+        },
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771916781043580938/Flowey.png",
+            "description": "Flowey"
+        },
+        {
+            "name": "Anthony",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771935634419482634/20201030_201512.jpg",
+            "description": "Flower"
         },
         {
             "name": "Kristy",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777676410062897212/week6.png",
-            "description": "Dragon and Girl"
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771965504062881812/week-4.png",
+            "description": "Flower"
+        },
+        {
+            "name": "James",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/771940776036794369/unknown.png",
+            "description": "Flower"
+        },
+        {
+            "name": "Monica",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772648665869320202/IMG-0121.jpg",
+            "description": "Flowers"
         },
         {
             "name": "Jessica",
-            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777762380641861663/image0.jpg",
-            "description": "Dragon"
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772648726983606312/IMG-0122.jpg",
+            "description": "Flowers"
+        },
+        {
+            "name": "Ali",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772711706928742440/image0.jpg",
+            "description": "Flower"
+        },
+        {
+            "name": "Andrew P.",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/772731213134954496/unknown.png",
+            "description": "Flower"
+        }
+    ],
+    "Favorite Anime Character": [
+        {
+            "name": "Anthony",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/767647312284614676/unknown.png", 
+            "description": "Diglett James"
+        },
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/767653358181154866/Vivi.png",
+            "description": "Princess Vivi"
+        },
+        {
+            "name": "Juan",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769055259342929941/razor.png",
+            "description": "Razor"
+        },
+        {
+            "name": "Ben",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769433770876338176/Untitled_Artwork.PNG",
+            "description": "Gon Freecss"
+        },
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/769436948640038932/Hayasaka.png",
+            "description": "Hayasaka Ai"
+        },
+        {
+            "name": "Kristy",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/770178291377111100/rider.png",
+            "description": "Rider"
+        },
+        {
+            "name": "Andrew P.",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/770931190341435402/unknown.png",
+            "description": "Shirley Fenette"
+        }
+    ],
+    "Favorite Animal in an Unlikely Habitat": [
+        {
+            "name": "Juan",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766748309963407450/discogator.png", 
+            "description": "Alligator Disco"
+        },
+        {
+            "name": "Andrew P.",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766820485564465152/unknown.png",
+            "description": "Beach Penguin"
+        },
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766872519327744040/Michelangelo.png",
+            "description": "Skating Ninja Turtle"
+        },
+        {
+            "name": "Kristy",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766888581858852874/week-2.png",
+            "description": "Space Hedgehog"
+        },
+        {
+            "name": "Ben",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/766924827877048320/Untitled_Artwork.JPG",
+            "description": "Feudal Elephant"
+        }
+    ],
+    "Favorite Pokemon": [
+        {
+            "name": "Juan",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763927188247543818/scorbunny.PNG",
+            "description": "Scorbunny"
+        },
+        {
+            "name": "Anthony",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763939646807212042/stScbwtvFS3IMmwDCoDyx88fowYhg8tFV6bl7F0H1g-j0Dh-expgYb78wpR6SMh-oMVdhY8DzQ5hRHttzll5aPv1En8pOoG5lS-Q.png",
+            "description": "Diglett"
+        },
+        {
+            "name": "Phil",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763957600386809906/Cubone.png",
+            "description": "Cubone"
+        },
+        {
+            "name": "Kristy",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763972891065712660/week-1-finished.png",
+            "description": "Pikachu"
+        },
+        {
+            "name": "Anthony",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/763998994598199337/image0.png",
+            "description": "Greninja"
+        },
+        {
+            "name": "Andrew P.",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/764380414700683284/unknown.png",
+            "description": "Jolteon"
+        },
+        {
+            "name": "Derek",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777348058412875816/escavalier.png",
+            "description": "Escavalier"
         }
     ]
 }

@@ -1,7 +1,3 @@
-var titles = ["Favorite Pokemon", "Favorite Animal in an Unlikely Habitat", 
-                "Favorite Anime Character", "Flower of Your Choice", 
-                "Food or Favorite League Character", "Fantasy or Dragons"];
-
 function getGallery(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -16,10 +12,15 @@ function getGallery(callback) {
 
 async function galleryController() {
     getGallery(function(response) {
-        for(var i = titles.length - 1; i >= 0; i--) {
-            console.log(JSON.parse(response)[i + 1]);
-            galleryView(i, titles[i], JSON.parse(response)[i + 1]);
-        }
+        response = JSON.parse(response);
+        Object.keys(response).forEach(function(key, index) {
+            console.log(response[key]);
+            galleryView(index, key, response[key]);
+        })
+        // for(var i = response.length - 1; i >= 0; i--) {
+        //     console.log(JSON.parse(response)[i + 1]);
+        //     galleryView(i, titles[i], JSON.parse(response)[i + 1]);
+        // }
     })
 
 }
