@@ -17,10 +17,6 @@ async function galleryController() {
             console.log(response[key]);
             galleryView(index, key, response[key]);
         })
-        // for(var i = response.length - 1; i >= 0; i--) {
-        //     console.log(JSON.parse(response)[i + 1]);
-        //     galleryView(i, titles[i], JSON.parse(response)[i + 1]);
-        // }
     })
 
 }
@@ -51,7 +47,7 @@ async function galleryView(weekNum, title, arr) {
     }
     markup += `</div>`
     
-    document.querySelector('.container').insertAdjacentHTML('beforeend', markup);
+    document.querySelector('.main__container').insertAdjacentHTML('afterbegin', markup);
 }
 
 if(document.readyState === "complete" || (document.readyState !== "loading" && !document.documentElement.doScroll)) {
