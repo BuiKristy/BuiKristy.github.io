@@ -1,5 +1,5 @@
 {
-    "1": [
+    "Favorite Pokemon": [
         {
             "name": "Juan",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/763927188247543818/scorbunny.PNG",
@@ -36,7 +36,7 @@
             "description": "Escavalier"
         }
     ],
-    "2": [
+    "Favorite Animal in an Unlikely Habitat": [
         {
             "name": "Juan",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/766748309963407450/discogator.png", 
@@ -63,7 +63,7 @@
             "description": "Feudal Elephant"
         }
     ],
-    "3": [
+    "Favorite Anime Character": [
         {
             "name": "Anthony",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/767647312284614676/unknown.png", 
@@ -100,7 +100,7 @@
             "description": "Shirley Fenette"
         }
     ],
-    "4": [
+    "Flower of Your Choice": [
         {
             "name": "Juan",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/771886887777730610/flower.png", 
@@ -147,7 +147,7 @@
             "description": "Flower"
         }
     ],
-    "5": [
+    "Food or Favorite League Character": [
         {
             "name": "Monica",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/773424823669620756/IMG_0123.jpg", 
@@ -224,7 +224,7 @@
             "description": "Zac"
         }
     ],
-    "6": [
+    "Fantasy or Dragons": [
         {
             "name": "Michael",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/775598136185978931/Untitled.png", 
@@ -279,6 +279,11 @@
             "name": "Kristy",
             "url": "https://cdn.discordapp.com/attachments/761716643894001726/777676410062897212/week6.png",
             "description": "Dragon and Girl"
+        },
+        {
+            "name": "Jessica",
+            "url": "https://cdn.discordapp.com/attachments/761716643894001726/777762380641861663/image0.jpg",
+            "description": "Dragon"
         }
     ]
 }
