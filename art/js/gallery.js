@@ -23,7 +23,7 @@ async function galleryController() {
 
 async function galleryView(weekNum, title, arr) {
     weekNum = weekNum + 1;
-    var markup = `<div class="art__header">Week ${weekNum}: ${title}</div>
+    var markup = `<div class="art__header">${title}</div>
     <div class="art__container">`;
     for(var i = 0; i < arr.length; i++) {
         var row = arr[i];
