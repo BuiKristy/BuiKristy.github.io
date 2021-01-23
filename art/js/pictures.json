@@ -1,4 +1,25 @@
-{
+{   "Some More Free Week Art Posts": [
+    {
+        "name": "Phil",
+        "url": "https://cdn.discordapp.com/attachments/761716643894001726/790378415365685318/Witch.png",
+        "description:": "Witch"
+    },
+    {
+        "name": "Phil",
+        "url": "https://cdn.discordapp.com/attachments/761716643894001726/797008074933141584/Slam_dunk.png",
+        "description": "Slam Dunk"
+    },
+    {
+        "name": "Andrew P.",
+        "url": "https://cdn.discordapp.com/attachments/761716643894001726/797379348667564032/unknown.png",
+        "description": "Tonberry"
+    },
+    {
+        "name": "Phil",
+        "url": "https://cdn.discordapp.com/attachments/761716643894001726/797588093087121428/Red_Coat.png",
+        "description": "Red Coat Guy"
+    }
+],
     "Week 8 Theme: Free Week": [
         {
             "name": "Jessica's Mom",
