@@ -1,7 +1,7 @@
 function getGallery(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'https://buikristy.github.io/art/js/pictures.json');
+    xobj.open('GET', './js/pictures.json');
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
           callback(xobj.responseText);
