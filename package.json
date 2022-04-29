@@ -1,0 +1,20 @@
+{
+  "name": "buikristy.github.io",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch portfolio/scss:portfolio/public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuiKristy/BuiKristy.github.io.git"
+  },
+  "author": "Kristy Bui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuiKristy/BuiKristy.github.io/issues"
+  },
+  "homepage": "https://github.com/BuiKristy/BuiKristy.github.io#readme"
+}
