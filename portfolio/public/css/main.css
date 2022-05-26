@@ -1,0 +1,144 @@
+.p-b-xxs {
+  padding-bottom: 0.5rem;
+}
+
+.p-b-xs {
+  padding-bottom: 1rem;
+}
+
+.p-t-xs {
+  padding-top: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: max-content max-content 200rem 25rem;
+  grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+}
+
+.nav {
+  display: grid;
+  grid-column: center-start/center-end;
+  grid-template-columns: 1fr max-content;
+  justify-content: space-between;
+}
+.nav .nav__logo {
+  align-self: center;
+}
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+}
+.nav__list .nav__item {
+  display: grid;
+}
+
+.main-content {
+  display: grid;
+  grid-column: center-start/center-end;
+  grid-template-rows: 80rem max-content;
+  grid-template-columns: 1fr 1fr;
+}
+.main-content .projects {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-around;
+}
+.main-content .projects .project__card {
+  display: grid;
+  grid-template-columns: min-content;
+}
+
+.jumbotron {
+  display: grid;
+  grid-column: center-start/center-end;
+}
+.jumbotron__content {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  top: 10rem;
+}
+.jumbotron__content--text {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer {
+  display: grid;
+  grid-column: center-start/center-end;
+}
+
+.nav__logo {
+  padding-left: 3rem;
+}
+
+.nav__list {
+  list-style: none;
+}
+.nav__list .nav__link {
+  padding: 1.25rem 2rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+.nav__list .nav__link:hover {
+  background-color: black;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border: 0 solid;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.container {
+  background: #fff;
+}
+
+.nav {
+  background: #c9c9c9;
+}
+
+.top {
+  padding: 10rem 5rem;
+}
+.top__content--blurb {
+  padding-right: 5rem;
+}
+
+.projects {
+  background: #ebebeb;
+  padding: 10rem 5rem;
+}
+
+.footer {
+  background: #c9c9c9;
+  padding: 10rem 5rem;
+}
+
+.main-content__blurb {
+  padding-top: 30rem;
+}
+
+/*# sourceMappingURL=main.css.map */

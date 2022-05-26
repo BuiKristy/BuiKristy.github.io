@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border: 0 solid;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.container {
+    background: #fff;
+}
+.nav {
+    background: #c9c9c9;
+}
+
+.top {
+    // background-color: #fff;
+    padding: 10rem 5rem;
+
+    &__content--blurb {
+        padding-right: 5rem;
+    }
+}
+
+.projects {
+    background: #ebebeb;
+    padding: 10rem 5rem;
+}
+
+.footer {
+    background: #c9c9c9;
+    padding: 10rem 5rem;
+}
+
+.main-content {
+
+    &__blurb {
+        padding-top: 30rem;
+    }
+}
