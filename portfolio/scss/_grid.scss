@@ -1,0 +1,75 @@
+.container {
+    display: grid;
+    grid-template-rows: max-content max-content 200rem 25rem;
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+    // padding: 10rem;
+}
+
+.nav {
+    @include grid-center;
+
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+
+    .nav__logo {
+        align-self: center;
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 10rem);
+    
+        & .nav__item {
+            display: grid;
+        }
+    }
+}
+
+.main-content {
+    @include grid-center;
+    grid-template-rows: 80rem max-content;
+    grid-template-columns: 1fr 1fr;
+
+    &__blurb {
+    }
+
+    & .projects {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-around;
+
+        & .project__card {
+            display: grid;
+            grid-template-columns: min-content;
+        }
+    }
+}
+
+.jumbotron {
+    @include grid-center;
+
+    &__content {
+       height: 100%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: end;
+       top: 10rem;
+
+        &--img {
+        }
+
+        &--text {
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+    }
+}
+
+.footer {
+    @include grid-center;
+}

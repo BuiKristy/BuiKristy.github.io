@@ -1,0 +1,18 @@
+$xx-small: .5rem;
+$x-small: 1rem;
+$small: 2rem;
+$medium: 3rem;
+$large: 5em;
+$x-large: 8em;
+
+.p-b-xxs {
+    padding-bottom: $xx-small;
+}
+
+.p-b-xs {
+    padding-bottom: $x-small;
+}
+
+.p-t-xs {
+    padding-top: $x-small;
+}

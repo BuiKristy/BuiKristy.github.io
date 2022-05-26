@@ -1,0 +1,20 @@
+.nav__logo {
+    padding-left: 3rem;
+}
+
+.nav__list {
+    list-style: none;
+
+    & .nav__link {
+        padding: 1.25rem 2rem;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    & .nav__link:hover {
+        background-color: black;
+        color: white;
+
+    }
+}
