@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Quicksand:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side__banner">
+            <img src="img/banner.jpg" alt="Banner for sign up form" class="side__banner--img">
+            <div class="side__banner--text">
+                <img src="img/logo.png" alt="Odin logo" class="side__banner--logo">
+                <span>Odin</span>
+            </div>
+            <div class="side__banner--credits">
+                <span>Photo by <a href="https://unsplash.com/@marekpiwnicki">Marek Piwnicki</a></span>
+            </div>
+        </div>
+
+        <main class="main__content"> 
+            <header>
+                <div class="header__content">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                    <p>Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </header>
+
+            <div class="signup__container">
+                <h2>Let's do this!</h2>
+                <form action="#" method="POST">
+                    <label for="firstName">First Name
+                        <input type="text" id="firstName" name="firstName">
+                    </label>
+
+                    <label for="lastName">Last Name 
+                        <input type="text" id="lastName" name="lastName">
+                    </label>
+                    <label for="email">Email
+                        <input type="email" id="email" name="email">
+                    </label>
+                    <label for="phoneNumber">Phone Number
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                    </label>
+                    <label for="password">Password
+                        <input type="password" id="password" name="password" required="required">
+                    </label>
+                    <label for="confirmPassword">Confirm Password
+                        <input type="password" id="confirmPassword" name="confirmPassword" onInput="check(this)">
+                    </label>
+                    <input type="submit" id="submit" value="Create Account">
+                </form>
+                
+                <span>Already have an account? <a href="#">Log in</a></span>
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        function check(input) {
+            if(input.value != document.getElementById("password").value) {
+                input.setCustomValidity("Passwords don't match.");
+            } else {
+                input.setCustomValidity("");
+            }
+        }
+    </script>
+</body>
+</html>

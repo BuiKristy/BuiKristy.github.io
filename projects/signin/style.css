@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(249,250,251);
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 400;
+    overflow-y: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+}
+
+/* side banner */
+
+.side__banner {
+    height: 100vh;
+    position: relative;
+}
+
+.side__banner--img {
+    object-fit: cover;
+    width: 400px;
+    height: 100%;
+}
+
+.side__banner--text {
+    position: relative;
+    bottom: 70%;
+    background: rgba(0,0,0, 40%);
+    width: 400px;
+    text-align: center;
+}
+
+.side__banner--logo {
+    width: 80px;
+    position: relative;
+    top: .5rem;
+}
+
+.side__banner--text span {
+    position: relative;
+    bottom: 1.5rem;
+    font-family: 'norsebold';
+    font-size: 8.4rem;
+    color: rgb(255,255,255);
+}
+
+.side__banner--credits {
+    position: absolute;
+    bottom: 1rem;
+    width: 400px;
+    text-align: center;
+
+    color: rgb(255,255,255);
+}
+
+.side__banner--credits a,
+.side__banner--credits a:visited {
+    color: rgb(255,255,255);
+}
+
+
+/* main content */
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__content {
+    padding-left: 3rem;
+    max-width: 60rem;
+
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* sign up box */
+.signup__container {
+    background-color: rgb(255,255,255);
+    padding: 3rem;
+}
+
+.signup__container h2 {
+    max-width: 100%;
+}
+.signup__container form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    
+    /* width: 50%; */
+    max-width: 60rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+    
+}
+
+.signup__container label {
+    width: 50%;
+    flex-basis: 25rem;
+
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+.signup__container form input {
+    height: 3rem;
+    border: 1px solid rgb(229,231,235);
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+.signup__container span a {
+    color: rgb(10,100,171);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+input:focus {
+    outline: 1px solid rgb(29,78,216);
+}
+
+#submit {
+    width: 17rem;
+    height: 100%;
+    background-color: rgb(10,100,171);
+    color: rgb(255,255,255);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
