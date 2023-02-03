@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "sass --watch portfolio/scss:portfolio/public/css"
+    "watch:sass": "sass --watch portfolio/scss:portfolio/public/css",
+    "watch:dev": "concurrently \"npm run watch:sass \" \" livereload -p 3001 \""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/BuiKristy/BuiKristy.github.io/issues"
   },
-  "homepage": "https://github.com/BuiKristy/BuiKristy.github.io#readme"
+  "homepage": "https://github.com/BuiKristy/BuiKristy.github.io#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
 }

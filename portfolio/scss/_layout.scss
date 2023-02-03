@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: max-content max-content 200rem 25rem;
+    grid-template-rows: max-content max-content max-content 25rem;
     grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
     // padding: 10rem;
 }
@@ -27,7 +27,7 @@
 
 .main-content {
     @include grid-center;
-    grid-template-rows: 80rem max-content;
+    grid-template-rows: 70rem max-content;
     grid-template-columns: 1fr 1fr;
 
     &__blurb {
@@ -36,12 +36,24 @@
     & .projects {
         display: grid;
         grid-column: 1 / -1;
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: 100%;
         justify-content: space-around;
+        row-gap: 10rem;
 
         & .project__card {
             display: grid;
-            grid-template-columns: min-content;
+            grid-column: 1 / -1;
+            grid-template-columns: 1fr max-content;
+            column-gap: 5rem;
+        }
+
+        & .project__blurb {
+            display: grid;
+            grid-template-rows: repeat(2, max-content) 1fr;
+
+            &-link {
+                align-self: end;
+            }
         }
     }
 }
@@ -72,4 +84,13 @@
 
 .footer {
     @include grid-center;
+
+    &__list {
+
+        &-item {
+            list-style: none;
+            display: inline;
+            
+        }
+    }
 }
