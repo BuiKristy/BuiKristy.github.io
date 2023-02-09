@@ -8,6 +8,7 @@ const port = 3000;
 const app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
+app.use(express.static("css"));
 
 
 app.get("/", function(req, res) {
@@ -17,12 +18,3 @@ app.get("/", function(req, res) {
 app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}`);
 })
-// const server = http.createServer((req, res) => {
-//     res.statusCode = 200;
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.end('Test test');
-// });
-
-// server.listen(port, hostname, () => {
-//     console.log(`Server running at http://${hostname}:${port}/`);
-// });

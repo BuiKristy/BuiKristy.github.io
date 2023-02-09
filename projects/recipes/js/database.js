@@ -2,9 +2,6 @@ import url from "./url.js";
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
-var url;
-
-
 
 var client = new MongoClient(url, { monitorCommands: true });
 // client.on('commandStarted', (event) => console.debug(event));
