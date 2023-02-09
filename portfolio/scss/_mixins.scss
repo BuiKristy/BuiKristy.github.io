@@ -2,3 +2,15 @@
     display: grid;
     grid-column: center-start / center-end;
 }
+
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+@mixin font-serif {
+    font-family: 'Playfair Display', serif;
+}

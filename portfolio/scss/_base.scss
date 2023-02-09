@@ -12,9 +12,15 @@ html {
     font-size: 62.5%;
 }
 
+@media only screen and (max-width: 76.875em) {
+    html {
+      font-size: 50%;
+    }
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    @include font-quicksand;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -36,7 +42,21 @@ body {
 
 .projects {
     background: #ebebeb;
-    padding: 10rem 5rem;
+    padding: 10rem 5rem 20rem 5rem;
+
+    & .project__blurb {
+    }
+
+    & .project__link {
+        @include font-quicksand;
+        background: none;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.8rem;
+        letter-spacing: .02rem;
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .footer {
@@ -49,4 +69,28 @@ body {
     &__blurb {
         padding-top: 30rem;
     }
+}
+
+// TEXT STYLES 
+
+h1 {
+    @include font-serif;
+    font-weight: 500;
+    font-size: 7.2rem;
+}
+
+h2 {
+    @include font-serif;
+    font-weight: 500;
+    font-size: 4.8rem;
+}
+
+h3 {
+    @include font-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+span {
+    letter-spacing: .01rem;
 }

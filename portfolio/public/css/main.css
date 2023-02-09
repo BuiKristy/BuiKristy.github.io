@@ -10,9 +10,17 @@
   padding-top: 1rem;
 }
 
+.p-t-s {
+  padding-top: 2rem;
+}
+
+.p-b-s {
+  padding-bottom: 2rem;
+}
+
 .container {
   display: grid;
-  grid-template-rows: max-content max-content 200rem 25rem;
+  grid-template-rows: max-content max-content max-content 25rem;
   grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
 }
 
@@ -36,18 +44,28 @@
 .main-content {
   display: grid;
   grid-column: center-start/center-end;
-  grid-template-rows: 80rem max-content;
+  grid-template-rows: 70rem max-content;
   grid-template-columns: 1fr 1fr;
 }
 .main-content .projects {
   display: grid;
   grid-column: 1/-1;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: 100%;
   justify-content: space-around;
+  row-gap: 10rem;
 }
 .main-content .projects .project__card {
   display: grid;
-  grid-template-columns: min-content;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr max-content;
+  column-gap: 5rem;
+}
+.main-content .projects .project__blurb {
+  display: grid;
+  grid-template-rows: repeat(2, max-content) 1fr;
+}
+.main-content .projects .project__blurb-link {
+  align-self: end;
 }
 
 .jumbotron {
@@ -72,6 +90,10 @@
 .footer {
   display: grid;
   grid-column: center-start/center-end;
+}
+.footer__list-item {
+  list-style: none;
+  display: inline;
 }
 
 .nav__logo {
@@ -106,9 +128,14 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 76.875em) {
+  html {
+    font-size: 50%;
+  }
+}
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -129,7 +156,17 @@ body {
 
 .projects {
   background: #ebebeb;
-  padding: 10rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
+}
+.projects .project__link {
+  font-family: "Quicksand", sans-serif;
+  background: none;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer {
@@ -139,6 +176,66 @@ body {
 
 .main-content__blurb {
   padding-top: 30rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+span {
+  letter-spacing: 0.01rem;
+}
+
+.isml-container {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+}
+
+.isml-header {
+  display: grid;
+  grid-column: center-start/center-end;
+  padding-top: 30rem;
+  padding-bottom: 5rem;
+}
+.isml-header span {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+}
+
+.isml-main-content {
+  display: grid;
+  grid-column: center-start/center-end;
+  grid-template-rows: 70rem max-content;
+  grid-template-columns: 1fr 1fr;
+}
+
+.isml-desc {
+  padding-top: 10rem;
+  background-color: green;
+}
+
+.isml-jumbotron {
+  display: grid;
+  grid-column: full-start/full-end;
+  overflow-x: hidden;
+}
+.isml-jumbotron__img {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=main.css.map */

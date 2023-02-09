@@ -1,0 +1,38 @@
+.isml-container {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(7, [col-start] 16rem [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+
+}
+
+.isml-header {
+    @include grid-center;
+    
+    padding-top: 30rem;
+    padding-bottom: 5rem;
+
+    & span {
+        @include font-serif;
+        font-size: 4.2rem;
+    }
+}
+
+.isml-main-content {
+    @include grid-center;
+    grid-template-rows: 70rem max-content;
+    grid-template-columns: 1fr 1fr;
+}
+
+.isml-desc {
+    padding-top: 10rem;
+    background-color: green;
+}
+
+.isml-jumbotron {
+    display: grid;
+    grid-column: full-start / full-end;
+    overflow-x: hidden;
+    &__img {
+        background-color: yellow;
+    }
+}
