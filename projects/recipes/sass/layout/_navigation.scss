@@ -1,0 +1,33 @@
+.nav__bar {
+    margin: 0;
+}
+
+.nav__item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu__dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: auto;
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 1.5rem 0;
+    }
+}
+
+.menu:focus {
+    pointer-events: none;
+    cursor: pointer;
+
+    .menu__dropdown {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+}

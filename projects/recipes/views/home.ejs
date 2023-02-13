@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    hello?
+<body class="container">
+    <nav class="nav__container">
+        <ul class="nav__bar">
+            <li class="nav__item">
+                <span>home</span>
+            </li>
+            <li class="nav__item">
+                <span>recipe index</span>
+            </li>
+            <li class="nav__item">
+                <div tabindex="0" class="menu nav__link">
+                    <span>recipes by</span>
+                    <div class="menu__dropdown">
+                        <a href="#">cuisine</a>
+                        <a href="#">diet</a>
+                        <a href="#">course</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="nav__search">
+            <img src="" alt="search icon">
+            <input type="text" name="search" id="search">
+        </div>
+    </nav>
+
+    <main class="posts__container">
+        <div class="post">
+            <img src="" alt="food pic">
+            <span class="post--category">Vegetarian</span>
+            <span class="post--title">Avocado Toast</span>
+            <a href="#">Read More</a>
+        </div>
+    </main>
+    <div class="side__container">
+        <div class="side__blurb">
+            <p>This project is a compilation of recipes that I've loved making. This idea stems from having recipes through all sorts of different media, so I wanted to make an anthology for them.</p>
+        </div>
+    </div>
 </body>
 </html>

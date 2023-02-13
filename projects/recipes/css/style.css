@@ -1,5 +1,64 @@
+.nav__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.nav__container .nav__bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav__bar {
+  margin: 0;
+}
+
+.nav__item {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu__dropdown {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  pointer-events: auto;
+}
+.menu__dropdown a {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem 0;
+}
+
+.menu:focus {
+  pointer-events: none;
+  cursor: pointer;
+}
+.menu:focus .menu__dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__container {
+  background-color: pink;
+}
+.nav__container .nav__item:hover {
+  background-color: green;
+}
+
 body {
-  background-color: yellow;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
