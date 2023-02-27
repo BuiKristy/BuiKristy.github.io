@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body class="container">
+    <nav class="nav__container">
+        <div class="nav__logo">
+            <img src="/icons/logo.png" alt="logo">
+        </div>
+        <ul class="nav__bar">
+            <li class="nav__item">
+                <a href="/add_recipe" class="nav__link">add</a>
+            </li>
+            <li class="nav__item">
+                <a href="/recipe_index" class="nav__link">recipe index</a>
+            </li>
+            <li class="nav__item">
+                <div tabindex="0" class="menu nav__link">
+                    <span>recipes by</span>
+                    <div class="menu__dropdown">
+                        <a href="/collection/cuisine_index">cuisine</a>
+                        <a href="/collection/diet_index">diet</a>
+                        <a href="/collection/course_index">course</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <form class="nav__search" action="#" method="GET">
+            <input type="text" name="search" id="search">
+            <button>
+                <img src="/icons/search.svg" alt="search icon" class="icon--search">
+            </button>
+        </form>
+    </nav>

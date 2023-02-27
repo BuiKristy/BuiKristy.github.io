@@ -1,7 +1,80 @@
-.nav__container {
-    background-color: pink;
+@use "sass:map";
+@use "../utils/variables";
+@use "../utils/bpVariables";
 
-    .nav__item:hover {
-        background-color: green;
+body {
+    font-family: 'Open Sans';
+    background-color: map.get(variables.$neutral-colors, "50");
+    color: map.get(variables.$neutral-colors, "800");
+}
+
+.nav__container {
+    background-color: map.get(variables.$neutral-colors, "50");
+    border-bottom: 2px solid map.get(variables.$neutral-colors, "200");
+
+    .nav__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    .nav__link:hover,
+    .nav__link:focus {
+        text-decoration: none;
+        background-color: map.get(variables.$cyan-colors, "200");
+    }
+
+    form {
+        border: 1px solid map.get(variables.$cyan-colors, "200");
+    }
+
+    button {
+        background-color: map.get(variables.$cyan-colors, "200");
+    }
+}
+
+.menu__dropdown {
+    background-color: map.get(variables.$cyan-colors, "50");
+
+    a:visited,
+    a {
+        color: inherit;
+    }
+    
+    a:hover {
+        color: map.get(variables.$cyan-colors, "600");
+    }
+}
+
+.post {
+    background-color: map.get(variables.$cyan-colors, "100");
+    color: map.get(variables.$cyan-colors, "900");
+
+    &--category {
+        color: map.get(variables.$neutral-colors, "800");
+    }
+}
+
+.nav__logo {
+    font-size: 3.2rem;
+}
+
+h1 {
+    // border-bottom: 2px solid red;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+h1::after {
+    content: '';
+    position:absolute;
+    width: 150px;
+    height: 5px;
+    background: map.get(variables.$cyan-colors, "300");
+    top: 4.5rem;
+    left: 2rem;
+
+    @media only screen and (max-width: bpVariables.$bp-small) {
+
     }
 }

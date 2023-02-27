@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("OpenSans-Italic-VariableFont_wdth,wght.ttf") format("ttf");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: italic;
+  }
+
+$cyan-colors: (
+    "50": #ecfeff,
+    "100": #cffafe,
+    "200": #a5f3fc,
+    "300": #67e8f9,
+    "400": #22d3ee,
+    "500": #06b6d4,
+    "600": #0891b2,
+    "700": #0e7490,
+    "800": #155e75,
+    "900": #164e63
+);
+
+$neutral-colors: (
+    "50": #fafafa,
+    "100": #f4f4f5,
+    "200": #e5e5e5,
+    "300": #d4d4d4,
+    "400": #a3a3a3,
+    "500": #737373,
+    "600": #525252,
+    "700": #404040,
+    "800": #262626,
+    "900": #171717
+);

@@ -1,0 +1,26 @@
+.posts__container {
+    .post img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .post span{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .post--category {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+    .post--title {
+        font-size: 2.4rem;
+    }
+
+    .post a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

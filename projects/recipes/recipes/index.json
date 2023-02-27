@@ -1,0 +1,42 @@
+{
+    "0": [{
+        "name": "Ahi Poke",
+        "image": "/food/ahi-poke.jpg",
+        "url": "/recipes/ahi-poke",
+        "course": "Side Dish",
+        "cuisine": "Asian",
+        "diet": "Seafood"
+    },
+    {
+        "name": "Fruit Jelly",
+        "image": "/food/fruit-jelly.jpg",
+        "url": "/recipes/fruit-jelly",
+        "course": "Snack",
+        "cuisine": "Asian",
+        "diet": "Vegetarian"
+    },
+    {
+        "name": "Oyster Motoyaki",
+        "image": "/food/oyster-motoyaki.jpg",
+        "url": "/recipes/oyster-motoyaki",
+        "course": "Appetizer",
+        "cuisine": "Asian",
+        "diet": "Seafood"
+    },
+    {
+        "name": "Vietnamese Style Baked Chicken",
+        "image": "/food/vietnamese-style-baked-chicken.webp",
+        "url": "/recipes/vietnamese-style-baked-chicken",
+        "course": "Main Dish",
+        "cuisine": "Asian",
+        "diet": "Chicken"
+    },
+    {
+        "name": "Mushroom Pasta",
+        "image": "/food/mushroom-pasta.webp",
+        "url": "/recipes/mushroom-pasta",
+        "course": "Main Dish",
+        "cuisine": "Italian",
+        "diet": "Vegetarian"
+    }
+]}

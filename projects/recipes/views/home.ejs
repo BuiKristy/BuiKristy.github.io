@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body class="container">
-    <nav class="nav__container">
-        <ul class="nav__bar">
-            <li class="nav__item">
-                <span>home</span>
-            </li>
-            <li class="nav__item">
-                <span>recipe index</span>
-            </li>
-            <li class="nav__item">
-                <div tabindex="0" class="menu nav__link">
-                    <span>recipes by</span>
-                    <div class="menu__dropdown">
-                        <a href="#">cuisine</a>
-                        <a href="#">diet</a>
-                        <a href="#">course</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="nav__search">
-            <img src="" alt="search icon">
-            <input type="text" name="search" id="search">
-        </div>
-    </nav>
+<%- include('header.ejs') %>
 
     <main class="posts__container">
+        <h1>Latest Posts</h1>
         <div class="post">
-            <img src="" alt="food pic">
-            <span class="post--category">Vegetarian</span>
-            <span class="post--title">Avocado Toast</span>
-            <a href="#">Read More</a>
+            <img src="/food/chili-lime-flank-steak.jpeg" alt="chili lime flank steak">
+            <span class="post--category">Main Dish</span>
+            <span class="post--title">Chili Lime Flank Steak</span>
+        </div>
+
+        <div class="post">
+            <img src="/food/tuna-salad.jpg" alt="tuna salad">
+            <span class="post--category">Side Dish</span>
+            <span class="post--title">Tuna Salad</span>
         </div>
     </main>
     <div class="side__container">
         <div class="side__blurb">
-            <p>This project is a compilation of recipes that I've loved making. This idea stems from having recipes through all sorts of different media, so I wanted to make an anthology for them.</p>
+            <!-- <p>This project is a compilation of recipes that I've enjoyed making from many different sources.</p> -->
         </div>
     </div>
-</body>
-</html>
+
+<%- include('footer.ejs') %>

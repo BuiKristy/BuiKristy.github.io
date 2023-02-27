@@ -1,10 +1,21 @@
+@use "../utils/bpVariables";
+
 .nav__bar {
     margin: 0;
+    height: 100%;
+
+    @media only screen and (max-width: bpVariables.$bp-largest) {
+        padding-left: 0;
+    }
 }
 
 .nav__item {
     list-style: none;
     cursor: pointer;
+
+    .nav__link {
+        padding: 1rem 2rem;
+    }
 }
 
 .menu__dropdown {
@@ -12,6 +23,11 @@
     visibility: hidden;
     position: absolute;
     pointer-events: auto;
+    z-index: 2;
+
+    padding-left: 2rem;
+    margin: 1rem 0 0 -2rem;
+    width: 20rem;
 
     a {
         display: block;
@@ -30,4 +46,36 @@
         visibility: visible;
     }
 
+}
+
+.nav__container {
+    padding-right: 2rem; 
+    
+    form {
+        display: flex;
+        padding: 1px;
+    }
+
+    input {
+        flex-grow: 2;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    @media only screen and (max-width: bpVariables.$bp-medium) {
+        .nav__logo {
+            display: none;
+        }
+
+        padding-left: 2rem;
+    }
+}
+
+ul li div:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }

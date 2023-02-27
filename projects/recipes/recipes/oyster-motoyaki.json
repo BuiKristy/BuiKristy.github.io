@@ -1,0 +1,55 @@
+{
+    "recipeName": "Oyster Motoyaki",
+    "image": "/food/oyster-motoyaki.jpg",
+    "source": ["Epicurious", "https://www.epicurious.com/recipes/member/views/big-johns-oyster-motoyaki-50031984"],
+    "cuisine": "Asian Fusion",
+    "diet": "Seafood",
+    "course": "Appetizer",
+    "ingredients": [
+        {
+            "unit": "6",
+            "product": "large oysters"
+        },
+        {
+            "unit": "1 cup",
+            "product": "Japanese mayonnaise (Kewpie)"
+        },
+        {
+            "unit": "1/4 cup",
+            "product": "fresh mushrooms, chopped"
+        },
+        {
+            "unit": "1/4 cup",
+            "product": "green onion, chopped"
+        },
+        {
+            "unit": "1 tablespoon",
+            "product": "red miso paste"
+        },
+        {
+            "unit": "1 teaspoon",
+            "product": "butter"
+        },
+        {
+            "unit": "1 teaspoon",
+            "product": "ground pepper"
+        },
+        {
+            "unit": "1 teaspoon",
+            "product": "cayenne pepper"
+        },
+        {
+            "unit": "1",
+            "product": "lemon, cut into 6 wedges"
+        },
+        {
+            "unit": "3 teaspoons",
+            "product": "masago (optional)"
+        }
+    ],
+    "servings": 6,
+    "prepTime": ["20", "minutes"],
+    "cookTime": ["25", "minutes"],
+    "instructions": ["Preheat oven to 400°F.", "Scrub each oyster well and rinse them off, then shuck the oysters (if you have trouble with this try placing the oysters in a shallow pan of boiling water for a minute first and they will open).","Once the oysters are shucked, remove the meat and rinse it off in cold water, being sure to remove any shell fragments. Discard the flat top half of the shell keeping the lower bowl shaped half and rinsing them out as well. Dry the meat by patting between 2 paper towel sheets.", "Whisk the mayonnaise, miso paste and peppers together. Set aside.", "Lightly saute the mushrooms and onion in butter to remove some of the water.", "Spread a thin layer of mayo mixture on the bottom of each shell.", "Cut the oyster meat into 4-6 pieces per oyster and divide evenly onto the shells.", "Divide the onion & mushroom mixture evenly into shells and top off thickly with the mayonnaise mixture, being sure to completely cover everything in the shell with the mixture.", "Place the shells on a baking sheet or arrange them in a shallow pan as level as you can.", "Place oysters in the oven on the top rack and bake for 20-25 minutes. The tops should be a nice dark brown when done.", "Remove oysters from the oven, placing a small amount of Masago on each and serve with a lemon wedge."],
+    "notes": ["Always smell a newly shucked oyster to make sure it's fresh. They should have no strong odor and merely smell like the ocean."]
+}

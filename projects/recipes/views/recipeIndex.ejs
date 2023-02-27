@@ -1,0 +1,16 @@
+<%- include('header') %>
+
+
+<h1>Recipe Index</h1>
+<main class="posts__container">
+    <% for(var i = 0; i < data[0].length; i++) {%>
+        <% var recipeData = data[0][i]; %>
+        <div class="post">
+            <a href="<%- recipeData.url %>"><img src="<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
+            <span class="post--category"><%- recipeData.course %></span>
+            <span class="post--title"><a href="<%- recipeData.url %>"><%- recipeData.name %></a></span>
+        </div>
+    <% } %>
+</main>
+
+<%- include('footer') %>

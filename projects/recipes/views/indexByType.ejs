@@ -1,0 +1,25 @@
+<%- include('header') %>
+
+
+<h1>Recipe Index</h1>
+<main class="posts__container">
+    
+    <% for(const type of types) { %>
+        <h2><%- type %></h2>
+        <% for(var j = 0; j < data.length; j++) { %>
+            <% if(type === data[j][typeName]) { %> 
+                <% var recipeData = data[j] %>
+                <div class="post">
+                    <a href="<%- recipeData.url %>"><img src="<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
+                    <span class="post--category"><%- recipeData.course %></span>
+                    <span class="post--title"><a href="<%- recipeData.url %>"><%- recipeData.name %></a></span>
+                </div>
+            <% } else { %>
+                <% continue; %>
+            <% } %>
+        <% } %>
+        
+    <% } %>
+</main>
+
+<%- include('footer') %>

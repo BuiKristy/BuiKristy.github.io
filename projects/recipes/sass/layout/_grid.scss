@@ -1,9 +1,101 @@
-.nav__container {
+@use "../utils/bpVariables";
+
+.container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 15rem max-content;
+    row-gap: 5rem;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] 16rem [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: bpVariables.$bp-largest) {
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(6, [col-start] 16rem [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    }
+
+    @media only screen and (max-width: bpVariables.$bp-large) {
+        grid-template-columns: [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end];
+
+    }
+}
+
+.nav__container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) [nav-center-start] repeat(6, 10rem) [nav-center-end] minmax(6rem, 1fr);
+    align-items: center;
+
+    .nav__logo {
+        justify-self: end;
+        grid-row: 1 / -1;
+    }
 
     .nav__bar {
         display: grid;
+        grid-column: nav-center-start / nav-center-end;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: bpVariables.$bp-largest) {
+        grid-template-columns: minmax(5rem, 1fr) [nav-center-start] repeat(6, 10rem) [nav-center-end]; 
+        grid-template-rows: 6rem 9rem;
+        column-gap: 1rem;
+
+        .nav__logo {
+            justify-self: start;
+        }
+
+        .nav__search {
+            grid-row: 1 / 2;
+            grid-column: nav-center-start / nav-center-end;
+        }
+    }
+
+    @media only screen and (max-width: bpVariables.$bp-medium) {
+        grid-template-columns: [nav-center-start] repeat(6, 1fr) [nav-center-end];
+    }
+}
+
+.posts__container {
+    display: grid;
+    grid-column: center-start / center-end;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  max-content;
+    grid-auto-rows: max-content;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+    h2 {
+        grid-column: 1 / -1;
+    }
+
+    .post {
+        display: grid;
+        grid-template-rows: minmax(10rem, 7fr) max-content 2fr;
+    }
+
+    @media only screen and (max-width: bpVariables.$bp-large) {
+        padding: 0 2rem 1rem 2rem;
+    }
+    @media only screen and (max-width: bpVariables.$bp-medium) {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.recipe__container {
+    grid-column: center-start / center-end;
+    
+    .recipe__stats {
+        display: grid;
+    }
+}
+
+
+h1 {
+    grid-column: center-start / center-end;
+}
+

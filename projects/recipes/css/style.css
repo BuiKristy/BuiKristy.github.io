@@ -1,19 +1,153 @@
-.nav__container {
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-VariableFont_wdth,wght.ttf") format("truetype-variations");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Italic-VariableFont_wdth,wght.ttf") format("ttf");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.nav__search button {
+  background: none;
+  border: none;
+}
+
+.icon--search {
+  width: 3rem;
+  filter: invert(25%) sepia(48%) saturate(3036%) hue-rotate(170deg) brightness(99%) contrast(89%);
+}
+
+.container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 15rem max-content;
+  row-gap: 5rem;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] 16rem [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 90em) {
+  .container {
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(6, [col-start] 16rem [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+}
+@media only screen and (max-width: 68.75em) {
+  .container {
+    grid-template-columns: [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end];
+  }
+}
+
+.nav__container {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) [nav-center-start] repeat(6, 10rem) [nav-center-end] minmax(6rem, 1fr);
+  align-items: center;
+}
+.nav__container .nav__logo {
+  justify-self: end;
+  grid-row: 1/-1;
 }
 .nav__container .nav__bar {
   display: grid;
+  grid-column: nav-center-start/nav-center-end;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (max-width: 90em) {
+  .nav__container {
+    grid-template-columns: minmax(5rem, 1fr) [nav-center-start] repeat(6, 10rem) [nav-center-end];
+    grid-template-rows: 6rem 9rem;
+    column-gap: 1rem;
+  }
+  .nav__container .nav__logo {
+    justify-self: start;
+  }
+  .nav__container .nav__search {
+    grid-row: 1/2;
+    grid-column: nav-center-start/nav-center-end;
+  }
+}
+@media only screen and (max-width: 59.375em) {
+  .nav__container {
+    grid-template-columns: [nav-center-start] repeat(6, 1fr) [nav-center-end];
+  }
+}
+
+.posts__container {
+  display: grid;
+  grid-column: center-start/center-end;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.posts__container h1 {
+  grid-column: 1/-1;
+}
+.posts__container h2 {
+  grid-column: 1/-1;
+}
+.posts__container .post {
+  display: grid;
+  grid-template-rows: minmax(10rem, 7fr) max-content 2fr;
+}
+@media only screen and (max-width: 68.75em) {
+  .posts__container {
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 59.375em) {
+  .posts__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.recipe__container {
+  grid-column: center-start/center-end;
+}
+.recipe__container .recipe__stats {
+  display: grid;
+}
+
+h1 {
+  grid-column: center-start/center-end;
 }
 
 .nav__bar {
   margin: 0;
+  height: 100%;
+}
+@media only screen and (max-width: 90em) {
+  .nav__bar {
+    padding-left: 0;
+  }
 }
 
 .nav__item {
   list-style: none;
   cursor: pointer;
+}
+.nav__item .nav__link {
+  padding: 1rem 2rem;
 }
 
 .menu__dropdown {
@@ -21,6 +155,10 @@
   visibility: hidden;
   position: absolute;
   pointer-events: auto;
+  z-index: 2;
+  padding-left: 2rem;
+  margin: 1rem 0 0 -2rem;
+  width: 20rem;
 }
 .menu__dropdown a {
   display: block;
@@ -39,26 +177,152 @@
 }
 
 .nav__container {
-  background-color: pink;
+  padding-right: 2rem;
 }
-.nav__container .nav__item:hover {
-  background-color: green;
+.nav__container form {
+  display: flex;
+  padding: 1px;
+}
+.nav__container input {
+  flex-grow: 2;
+  border: none;
+}
+.nav__container input:focus {
+  outline: none;
+}
+@media only screen and (max-width: 59.375em) {
+  .nav__container {
+    padding-left: 2rem;
+  }
+  .nav__container .nav__logo {
+    display: none;
+  }
+}
+
+ul li div:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.posts__container .post {
+  height: 50rem;
+}
+
+.posts__container .post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.posts__container .post span {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.posts__container .post--category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.posts__container .post--title {
+  font-size: 2.4rem;
+}
+.posts__container .post a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recipe__container {
+  width: 60%;
+}
+@media only screen and (max-width: 68.75em) {
+  .recipe__container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 59.375em) {
+  .recipe__container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .recipe__container img {
+    width: 100%;
+  }
+  .recipe__container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.recipe__ingredients li {
+  margin-bottom: 1rem;
+}
+
+.recipe__steps li {
+  margin-bottom: 1rem;
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  font-size: 1.6rem;
+  font-family: "Open Sans";
+  background-color: #fafafa;
+  color: #262626;
 }
 
-html {
-  font-size: 62.5%;
+.nav__container {
+  background-color: #fafafa;
+  border-bottom: 2px solid #e5e5e5;
+}
+.nav__container .nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+.nav__container .nav__link:hover,
+.nav__container .nav__link:focus {
+  text-decoration: none;
+  background-color: #a5f3fc;
+}
+.nav__container form {
+  border: 1px solid #a5f3fc;
+}
+.nav__container button {
+  background-color: #a5f3fc;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.menu__dropdown {
+  background-color: #ecfeff;
+}
+.menu__dropdown a:visited,
+.menu__dropdown a {
+  color: inherit;
+}
+.menu__dropdown a:hover {
+  color: #0891b2;
+}
+
+.post {
+  background-color: #cffafe;
+  color: #164e63;
+}
+.post--category {
+  color: #262626;
+}
+
+.nav__logo {
+  font-size: 3.2rem;
+}
+
+h1 {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 5px;
+  background: #67e8f9;
+  top: 4.5rem;
+  left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
