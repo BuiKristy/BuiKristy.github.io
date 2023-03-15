@@ -1,26 +1,109 @@
 <%- include('header') %>
 
-<form action="/" method="post">
+<h1>Add Recipe</h1>
+
+<form action="/add_recipe" method="post" class="form__container" enctype="multipart/form-data">
     <div class="form__recipe">
         <div class="recipe--name">
             <label for="recipe-name">Recipe Name</label>
-            <input type="text" name="recipe-name" id="recipe-name">
+            <input type="text" name="name" id="recipe-name">
+        </div>
+
+        <div class="recipe--image">
+            <label for="recipe-image">Image</label>
+            <input type="file" name="image" id="recipe-image" accept="image/png, image/jpeg">
         </div>
 
         <div class="recipe--source">
             <label for="recipe-source">Source</label>
-            <input type="text" name="recipe-source" id="recipe-source">
+            <input type="text" name="source" id="recipe-source">
         </div>
 
         <div class="recipe--url">
             <label for="recipe-url">Source URL</label>
-            <input type="text" name="recipe-url" id="recipe-url">
+            <input type="text" name="url" id="recipe-url">
         </div>
 
         <div class="recipe--course">
             <label for="recipe-course">Course</label>
-            <input type="text" name="recipe-course" id="recipe-course">
+            <select name="course" id="recipe-course">
+                <option value="">Choose an option</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="dessert">Dessert</option>
+                <option value="drink">Drink</option>
+                <option value="main dish">Main Dish</option>
+                <option value="side dish">Side Dish</option>
+                <option value="snack">Snack</option>
+                <option value="soup">Soup</option>
+            </select>
         </div>
+
+        <div class="recipe--cuisine">
+            <label for="recipe-cuisine">Cuisine</label>
+            <input type="text" list="recipe-cuisine" name="cuisine">
+            <datalist name="cuisine" id="recipe-cuisine">
+                <option>Choose an option</option>
+                <option>Asian</option>
+                <option>Italian</option>
+                <option>Mexican</option>
+                <option>Southern</option>
+            </datalist>
+        </div>
+
+        <div class="recipe--diet">
+            <label for="recipe-diet">Diet</label>
+            <select name="diet" id="recipe-diet">
+                <option value="beef">Beef</option>
+                <option value="chicken">Chicken</option>
+                <option value="pork">Pork</option>
+                <option value="seafood">Seafood</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+        </div>
+
+        <div class="recipe--servings">
+            <label for="recipe-servings">Serving Size</label>
+            <input type="text" name="servings" id="recipe-servings">
+        </div>
+
+        <div class="recipe--prepTime">
+            <label for="recipe-prepTime">Prep Time</label>
+            <input type="text" name="prepTime" id="recipe-prepTime">
+            <select name="prepTime">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select>
+        </div>
+
+        <div class="recipe--cookTime">
+            <label for="recipe-cookTime">Cook Time</label>
+            <input type="text" name="cookTime" id="recipe-cookTime">
+            <select name="cookTime">
+                <option value="seconds">Seconds</option>
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+            </select>
+        </div>
+
+        <div class="recipe--ingredients">
+            <label for="recipe-ingredients">Ingredients</label>
+            <textarea name="ingredients" id="recipe-ingredients" cols="70" rows="10"></textarea>
+        </div>
+
+        <div class="recipe--instructions">
+            <label for="recipe-instructions">Instructions</label>
+            <textarea name="instructions" id="recipe-instructions" cols="70" rows="10"></textarea>
+        </div>
+
+        <div class="recipe--notes">
+            <label for="recipe-notes">Notes</label>
+            <textarea name="notes" id="recipe-notes" cols="70" rows="10"></textarea>
+        </div>
+
+        <button type="submit">Add Recipe</button>
     </div>
 </form>
 

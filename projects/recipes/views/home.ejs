@@ -1,23 +1,16 @@
-<%- include('header.ejs') %>
+<%- include('header') %>
 
-    <main class="posts__container">
-        <h1>Latest Posts</h1>
+
+<h1>Latest Posts</h1>
+<main class="posts__container">
+    <% for(var i = 0; i < data.length; i++) {%>
+        <% var recipeData = data[i]; %>
         <div class="post">
-            <img src="/food/chili-lime-flank-steak.jpeg" alt="chili lime flank steak">
-            <span class="post--category">Main Dish</span>
-            <span class="post--title">Chili Lime Flank Steak</span>
+            <a href="recipes/<%- recipeData.page %>"><img src="food/<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
+            <span class="post--category"><%- recipeData.course %></span>
+            <span class="post--title"><a href="recipes/<%- recipeData.page %>"><%- recipeData.name %></a></span>
         </div>
+    <% } %>
+</main>
 
-        <div class="post">
-            <img src="/food/tuna-salad.jpg" alt="tuna salad">
-            <span class="post--category">Side Dish</span>
-            <span class="post--title">Tuna Salad</span>
-        </div>
-    </main>
-    <div class="side__container">
-        <div class="side__blurb">
-            <!-- <p>This project is a compilation of recipes that I've enjoyed making from many different sources.</p> -->
-        </div>
-    </div>
-
-<%- include('footer.ejs') %>
+<%- include('footer') %>

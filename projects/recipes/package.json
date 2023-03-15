@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch ./sass/main.scss ./css/style.css",
-    "nodemon": "nodemon --ext *",
+    "nodemon": "nodemon --ext * --ignore ./img/",
     "dev": "concurrently --kill-others \"npm run nodemon\" \"npm run watch:sass\""
   },
   "author": "Kristy Bui",
@@ -14,6 +14,7 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
     "mongodb": "^5.0.1"
   },
   "devDependencies": {

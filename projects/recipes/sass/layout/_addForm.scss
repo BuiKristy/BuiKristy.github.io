@@ -1,0 +1,23 @@
+.form__container {
+    grid-template-columns: 50rem;
+
+    .form__recipe {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    label {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        padding: 1.25rem 2rem;
+    }
+    
+    button {
+        width: 20rem;
+        padding: 2rem 0;
+        margin-bottom: 10rem;
+    }
+}

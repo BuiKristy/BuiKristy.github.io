@@ -3,12 +3,12 @@
 
 <h1>Recipe Index</h1>
 <main class="posts__container">
-    <% for(var i = 0; i < data[0].length; i++) {%>
-        <% var recipeData = data[0][i]; %>
+    <% for(var i = 0; i < data.length; i++) {%>
+        <% var recipeData = data[i]; %>
         <div class="post">
-            <a href="<%- recipeData.url %>"><img src="<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
+            <a href="recipes/<%- recipeData.page %>"><img src="food/<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
             <span class="post--category"><%- recipeData.course %></span>
-            <span class="post--title"><a href="<%- recipeData.url %>"><%- recipeData.name %></a></span>
+            <span class="post--title"><a href="recipes/<%- recipeData.page %>"><%- recipeData.name %></a></span>
         </div>
     <% } %>
 </main>

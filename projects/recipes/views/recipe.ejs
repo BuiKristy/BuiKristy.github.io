@@ -1,20 +1,35 @@
 <%- include('header.ejs') %>
 <div class="recipe__container">
-    <h1><%= data.recipeName %></h1>
-    <img src="<%= data.image %>">
+    <h1><%= data.name %></h1>
+    <img src="/food/<%= data.image %>">
     <div class="recipe__stats">
         <span><em>Servings:</em> <%= data.servings %></span>
         <span><em>Prep Time:</em> <%= data.prepTime[0] %> <%= data.prepTime[1] %></span>
         <span><em>Cook Time:</em> <%= data.cookTime[0] %> <%= data.cookTime[1] %></span>
+        
+        <span><em>Source:</em> <a href="<%= data.url %>"><%= data.source %></a></span> 
     </div>
 
-    <div class="recipe__ingredients">
+    <!-- <div class="recipe__ingredients">
         <h2>Ingredients</h2>
         <ul>
             <% data.ingredients.forEach(function(ingredient) { %>
-                <li><%= ingredient.unit %> <%= ingredient.product %></li>
+                <li><%= ingredient %></li>
             <% }) %>
         </ul>
+    </div> -->
+
+    <div class="recipe__ingredients">
+        <h2>Ingredients</h2>
+        <% data.ingredients.forEach(function(ingredient) { %>
+            <% if(ingredient.startsWith("===")) { %>
+                <h3><%= ingredient.slice(3); %></h3>
+            <% } else { %>
+                <ul>
+                    <li><%= ingredient %></li>
+                </ul>
+            <% } %>
+        <% }) %>
     </div>
 
     <div class="recipe__steps">
@@ -25,5 +40,18 @@
             <% }) %>
         </ol>
     </div>
+
+
+    <% if(data.notes.length > 0) { %>
+        <div class="recipe__notes">
+            <h2>Notes</h2>
+            <ol>
+            <% data.notes.forEach(function(note) { %>
+                <li> <%= note %></li>
+            <% }) %>
+            </ol>
+        </div>
+    <% } %>
+
 </div>
 <%- include('footer.ejs') %>

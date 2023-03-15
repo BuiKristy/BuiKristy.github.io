@@ -5,14 +5,14 @@
 <main class="posts__container">
     
     <% for(const type of types) { %>
-        <h2><%- type %></h2>
+        <h2><%- type.toUpperCase() %></h2>
         <% for(var j = 0; j < data.length; j++) { %>
             <% if(type === data[j][typeName]) { %> 
                 <% var recipeData = data[j] %>
                 <div class="post">
-                    <a href="<%- recipeData.url %>"><img src="<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
+                    <a href="/recipes/<%- recipeData.page %>"><img src="/food/<%- recipeData.image %>" alt="<%- recipeData.url %>"></a>
                     <span class="post--category"><%- recipeData.course %></span>
-                    <span class="post--title"><a href="<%- recipeData.url %>"><%- recipeData.name %></a></span>
+                    <span class="post--title"><a href="/recipes/<%- recipeData.page %>"><%- recipeData.name %></a></span>
                 </div>
             <% } else { %>
                 <% continue; %>
